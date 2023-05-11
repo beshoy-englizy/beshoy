@@ -154,6 +154,12 @@ section {
     background-position: center;
     background-attachment: fixed;
 }
+@media (max-width:767px) {
+    .project {
+        background-image: none;
+        background-color: #000016;
+    }
+}
 .project .content {
     margin-top: 30px;
 }
