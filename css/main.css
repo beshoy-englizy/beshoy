@@ -98,7 +98,6 @@ section {
     color: #fff;
     font-size: 1.7em;
     padding-right: 30px;
-
 }
 .icons a i {
     transition: 0.2s;
@@ -119,6 +118,7 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 .cards .card {
     background-color: #fff;
@@ -160,9 +160,6 @@ section {
         background-color: #000016;
     }
 }
-.project .content {
-    margin-top: 30px;
-}
 .project .pro-card {
     background-color: #fff;
     border: 1px solid #fff;
@@ -185,7 +182,6 @@ section {
 .project .pro-info {
     padding: 1em;
 }
-
 .project .pro-cat {
     font-size: 0.8em;
     color: #000;
@@ -205,6 +201,66 @@ section {
 .project .more-d:hover {
     color: #601cfc;
 }
+.s-content {
+    display: flex;
+    justify-content: center;
+}
+.s-cards .card {
+    background-color: #fff;
+    width: 90%;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.s-cards .card .lan .icon i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    background-color: var(--main-color);
+    width: 3em;
+    height: 3em;
+    border-radius: 0.5em;
+    margin-right: .9em;
+}
+.s-cards .card .lan .icon span {
+    font-size: 2em;
+    color: var(--main-color);
+}
+.s-cards .card .lan .l-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.s-cards .card .lan .lan-box{
+    background-color: rgb(227, 228, 230);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2.5em;
+    width: 10em;
+    text-align: center;
+    padding: 15px;
+    transition: 0.7s ease;
+    font-size: 1.2em;
+}
+.s-cards .card .lan .lan-box:hover {
+    transform: scale(1.1);
+} 
+.contactt {
+    background-image: url(../img/10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width:767px) {
+    .contactt {
+        background-image: none;
+        background-color: #000016;
+    }
+}
 .contactt .icon i{
     font-size: 0.7em;
 }
@@ -213,24 +269,6 @@ section {
 }
 .contactt .card .info p {
     font-size: 1.5em;
-}
-footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-footer .fot-tit {
-    font-size: 1em;
-    font-weight: 600;
-}
-footer .fot-tit span {
-    color: var(--main-color);
-}
-footer .icons a {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
 }
 @media (max-width:1023px) {
     header {
@@ -266,8 +304,11 @@ footer .icons a {
     .contactt .card .info p {
         font-size: 1.3em;
     }
+    .icons a {
+        padding-right: 20px;
+    }
 }
-@media (max-width:350px) {
+@media (max-width: 400px) {
     body {
         font-size: 9px;
     }
@@ -286,10 +327,40 @@ footer .icons a {
 }
 @media (max-width:280px) {
     body {
-        font-size: 7px;
+        font-size: 6px;
     }
     .contactt .card .info p {
         font-size: 1.1em;
     }
 }
+@media (max-width:230px) {
+    body {
+        font-size: 5px;
+    }
+}
+@media (max-width:200px) {
+    body {
+        font-size: 3px;
+    }
+}
 /* section */
+/* footer */
+footer {
+    background-color: #474646;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+footer .fot-tit {
+    font-size: 1em;
+    font-weight: 600;
+}
+footer .fot-tit span {
+    color: var(--main-color);
+}
+footer .icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+/* footer */
